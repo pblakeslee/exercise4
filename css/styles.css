@@ -1,4 +1,3 @@
-/* this is a test to see if the HTML is linked */
-p {
-  color: blueviolet;
+.uppercase {
+  text-transform: uppercase;
 }
