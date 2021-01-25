@@ -9,7 +9,7 @@ body {
 
 header {
   background-color: white;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -116,9 +116,14 @@ h2 a:active {
   flex-direction: column;
 }
 
+#section2 a {
+  font-size: 10px;
+  text-align: right;
+  color: #566175;
+}
 form {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 input {
@@ -127,12 +132,21 @@ input {
   border: none;
   border-bottom: 1px solid #bac1cc;
 }
-#checkbox-round {
-  border-radius: 200px;
+
+#remember-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
 #remember-me label {
   font-size: 10px;
   color: #566175;
+  padding-left: 8px;
+}
+
+#remember-me input[type="checkbox"] {
+  border-radius: 50%;
 }
 
 #section3 {
