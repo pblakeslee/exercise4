@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 4 - Log In Screen</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -31,21 +31,26 @@
     <main>
       <div id="section1">
         <h1>Log In</h1>
-        <h2 class="uppercase">New to Headspace?</h2>
-        <span><a class="uppercase" href="#">Sign up for free!</a></span>
+        <h2 class="uppercase">
+          New to Headspace? <a class="uppercase" href="#">Sign up for free!</a>
+        </h2>
       </div>
-      <div id="section2">
-        <input type="email" />
-        <input type="password" />
+      <form id="section2">
+        <input type="email" placeholder="Email address" />
+        <input type="password" placeholder="Password" />
         <a class="uppercase" href="#">Forgot?</a>
-        <input class="uppercase" type="checkbox" />
-      </div>
+        <div id="remember-me">
+          <input class="checkbox-round" type="checkbox" />
+          <label class="uppercase" for="checkbox">Remember Me</label>
+        </div>
+      </form>
       <div id="section3">
         <button class="uppercase" id="dark-blue" type="button">login</button>
+        <h2 class="uppercase">or</h2>
         <button class="uppercase" id="light-blue" type="button">
           login with facebook
         </button>
-        <button class="uppercase" id="light-blue" type="button">
+        <button class="uppercase" id="green" type="button">
           login with spotify
         </button>
       </div>

@@ -50,12 +50,6 @@ li a:active {
   color: #934425;
 }
 
-main {
-  background-color: white;
-  width: 375px;
-  height: 550px;
-}
-
 button {
   font-family: "Work Sans", sans-serif;
 }
@@ -80,4 +74,102 @@ a {
 #orange:active {
   background-color: #934425;
   border: 2px solid #934425;
+}
+
+main {
+  background-color: white;
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #484c60;
+}
+
+h2 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 4px;
+  color: #566175;
+}
+
+h2 a {
+  color: #e9753d;
+}
+
+h2 a:hover {
+  color: #934425;
+}
+
+h2 a:active {
+  color: #566175;
+}
+
+#section2 {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  width: 100%;
+  margin-top: 10px;
+}
+
+input {
+  padding: 5px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #bac1cc;
+}
+#checkbox-round {
+  border-radius: 200px;
+}
+#remember-me label {
+  font-size: 10px;
+  color: #566175;
+}
+
+#section3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#section3 button {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  font-size: 12px;
+}
+
+#dark-blue {
+  background-color: #484c60;
+}
+
+#dark-blue:hover {
+  background-color: #262a3b;
+}
+
+#light-blue {
+  background-color: #4787c1;
+}
+
+#light-blue:hover {
+  background-color: #2a5985;
+}
+
+#green {
+  background-color: #36a94d;
+}
+
+#green:hover {
+  background-color: #218034;
 }
