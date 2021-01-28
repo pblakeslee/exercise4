@@ -84,13 +84,12 @@ a {
 }
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  height: calc(100vh - 98px);
 }
 .log-in {
   background-color: white;
   width: 325px;
+  height: 465px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,39 +199,31 @@ input {
 /* Start additional CSS for app.html */
 .app-body {
   display: flex;
-  justify-content: flex-start;
-  min-height: 100%;
+  justify-content: space-between;
   border-top: 1px solid rgb(184, 184, 184);
 }
-nav.secondary {
+.secondary {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100%;
   width: 200px;
   background-color: slategrey;
   padding-right: 0;
 }
 
-nav.secondary ul {
+.secondary ul {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
 }
 
-nav.secondary li {
+.secondary li {
   padding: 5px 0;
 }
 
-nav.secondary a {
+.secondary a {
   color: white;
   font-size: 14px;
-}
-
-main.app-body {
-  display: flex;
-  align-items: flex-start;
-  min-height: 100vh;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -259,21 +250,21 @@ main.app-body {
   #orange {
     margin-left: 20px;
   }
-  nav.secondary {
+  .secondary {
     width: 100%;
     padding: 20px;
     height: 130px;
   }
-  nav.secondary ul {
+  .secondary ul {
     margin: 0;
   }
-  nav.secondary li {
+  .secondary li {
     margin: 0;
   }
-  nav.secondary a:hover {
+  .secondary a:hover {
     color: #e9753d;
   }
-  nav.secondary a:active {
+  .secondary a:active {
     color: #934425;
   }
 }
