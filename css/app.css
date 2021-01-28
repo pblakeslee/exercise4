@@ -2,12 +2,8 @@
   text-transform: uppercase;
 }
 body {
-  background-color: #7dc2c0;
   margin: 0;
   font-family: "Work Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 header {
@@ -29,7 +25,7 @@ nav {
   flex-direction: row;
   padding-right: 20px;
 }
-ul {
+.primary ul {
   margin-top: 0;
   display: flex;
   flex-direction: row;
@@ -44,14 +40,12 @@ li {
   font-size: 12px;
 }
 
-li a {
+.primary li a {
   color: #566175;
 }
-
 li a:hover {
   color: #e9753d;
 }
-
 li a:active {
   color: #934425;
 }
@@ -81,12 +75,18 @@ a {
   background-color: #934425;
   border: 2px solid #934425;
 }
-
 main {
+  background-color: #7dc2c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log-in {
   background-color: white;
   width: 325px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
   margin: 40px;
@@ -152,9 +152,9 @@ input {
   padding-left: 8px;
 }
 
-#remember-me input[type="checkbox"] {
+/* #remember-me input[type="checkbox"] {
   border-radius: 50%;
-}
+} */
 
 #section3 {
   display: flex;
@@ -194,6 +194,36 @@ input {
 #green:hover {
   background-color: #218034;
 }
+/* Start additional CSS for app.html */
+nav.secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 200px;
+  background-color: slategrey;
+  padding-right: 0;
+}
+
+nav.secondary ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+nav.secondary li {
+  padding: 5px 0;
+}
+
+nav.secondary a {
+  color: white;
+  font-size: 14px;
+}
+
+main.app-body {
+  display: flex;
+  align-items: flex-start;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -206,7 +236,7 @@ input {
     flex-direction: column;
   }
 
-  ul {
+  .primary ul {
     flex-direction: column;
     align-items: flex-start;
     margin: 10px 0;
