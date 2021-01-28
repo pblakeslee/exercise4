@@ -5,6 +5,13 @@ body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
 }
+body.teal-blue {
+  background-color: #7dc2c0;
+}
+
+body.light-gray {
+  background-color: rgb(240, 240, 240);
+}
 
 header {
   background-color: white;
@@ -76,10 +83,10 @@ a {
   border: 2px solid #934425;
 }
 main {
-  background-color: #7dc2c0;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 .log-in {
   background-color: white;
@@ -89,7 +96,6 @@ main {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: 40px;
 }
 
 h1 {
@@ -152,10 +158,6 @@ input {
   padding-left: 8px;
 }
 
-/* #remember-me input[type="checkbox"] {
-  border-radius: 50%;
-} */
-
 #section3 {
   display: flex;
   flex-direction: column;
@@ -194,12 +196,19 @@ input {
 #green:hover {
   background-color: #218034;
 }
+
 /* Start additional CSS for app.html */
+.app-body {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 100%;
+  border-top: 1px solid rgb(184, 184, 184);
+}
 nav.secondary {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  min-height: 100%;
   width: 200px;
   background-color: slategrey;
   padding-right: 0;
@@ -223,6 +232,7 @@ nav.secondary a {
 main.app-body {
   display: flex;
   align-items: flex-start;
+  min-height: 100vh;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -248,5 +258,22 @@ main.app-body {
   }
   #orange {
     margin-left: 20px;
+  }
+  nav.secondary {
+    width: 100%;
+    padding: 20px;
+    height: 130px;
+  }
+  nav.secondary ul {
+    margin: 0;
+  }
+  nav.secondary li {
+    margin: 0;
+  }
+  nav.secondary a:hover {
+    color: #e9753d;
+  }
+  nav.secondary a:active {
+    color: #934425;
   }
 }
